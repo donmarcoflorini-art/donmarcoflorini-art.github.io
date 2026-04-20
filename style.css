@@ -307,8 +307,15 @@ ul {
 .projects-grid,
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-card,
@@ -401,11 +408,17 @@ ul {
 
 @media (max-width: 960px) {
   .hero,
-  .about-grid,
-  .projects-grid,
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
+.about-grid {
+  grid-template-columns: 1fr;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.services-grid {
+  grid-template-columns: 1fr;
+}
 
   .hero {
     padding-top: 3rem;
@@ -447,7 +460,9 @@ ul {
   .hero-card-inner {
     padding: 1.35rem;
   }
-
+.projects-grid {
+  grid-template-columns: 1fr;
+}
   .project-content {
     padding: 1.2rem;
   }
