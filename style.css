@@ -95,7 +95,9 @@ ul {
 .nav-links a:hover {
   opacity: 0.75;
 }
-
+.nav-links a.active {
+  color: var(--accent);
+}
 .nav-btn,
 .btn {
   display: inline-flex;
