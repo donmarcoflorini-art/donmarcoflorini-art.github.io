@@ -317,6 +317,24 @@ ul {
   padding: 1.75rem;
 }
 
+.project-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #e2e8f0;
+  background: #cbd5e1;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
 .project-type {
   color: var(--accent-dark);
   margin-bottom: 0.8rem;
@@ -411,12 +429,19 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .project-card,
   .service-card,
   .contact-box,
   .skill-box,
   .hero-card-inner {
     padding: 1.35rem;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-image {
+    height: 210px;
   }
 
   .section {
